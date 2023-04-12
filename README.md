@@ -2,9 +2,11 @@
 solving leetcode problems using Java.
 
 
-1. Two Sum Problem
+== 1. Two Sum Problem
 
-lass Solution {
+[source,java]
+----
+class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] arr = new int[2];
 
@@ -22,3 +24,6 @@ lass Solution {
         return arr;
     }
 }
+----
+
+
