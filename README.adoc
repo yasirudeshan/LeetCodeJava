@@ -28,7 +28,7 @@ class Solution {
 
 
 
-== 1491. Average Salary Excluding the Minimum and Maximum Salar
+== 1491. Average Salary Excluding the Minimum and Maximum Salary
 [source,java]
 ----
 class Solution {
