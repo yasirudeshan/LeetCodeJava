@@ -27,3 +27,28 @@ class Solution {
 ----
 
 
+
+== 1491. Average Salary Excluding the Minimum and Maximum Salar
+[source,java]
+----
+class Solution {
+    public double average(int[] salary) {
+        int min = salary[0], max = 0, total = 0;
+        int len = salary.length;
+        for(int i = 0; i < len; i++){
+            if(salary[i] > max){
+                max = salary[i];
+            }
+            else if(min > salary[i]){
+                min = salary[i];
+            }
+            total += salary[i];
+        }
+        total -= (max + min);
+        double avg = (double)total /  (len - 2);
+        return avg;
+    }
+}
+----
+
+
