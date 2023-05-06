@@ -1,7 +1,6 @@
 # LeetCodeJava
 solving leetcode problems using Java.
 
-
 == 1. Two Sum Problem
 
 [source,java]
