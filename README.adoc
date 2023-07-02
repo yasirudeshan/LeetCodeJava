@@ -74,3 +74,38 @@ class Solution {
 }
 
 ----
+
+
+==  9. Palindrome Number
+
+[source,java]
+----
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        int length, sum = 0;
+        if(x < 0){
+            return false;
+        }
+        else {
+            length = (int)(Math.log10(x) + 1);
+            int j = length - 1;
+            
+            for(int i = 1; i <= length; i++){
+                int y = x % (int)Math.pow(10,i);
+                
+                int z = y / (int)Math.pow(10, i - 1);
+                
+                sum += z * (int)Math.pow(10, j) ;
+                j--;
+            }
+            
+            if (sum == x) 
+                return true;
+        }
+        return false;
+    }
+}
+
+----
+
